@@ -1,26 +1,47 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { CardList } from './components/cardlist/card-list.component';
+import { SearchBox } from './components/search-box/search-box.components'
+import {Dropdown} from './components/dropdown/dropdown.component'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+
+  constructor() {
+    super();
+    this.state =
+      {
+        names: [],
+        searchfeild: ''
+      };
+  }
+
+  componentDidMount() {
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then(response => response.json())
+      .then(user => this.setState({ names: user }))
+  }
+
+
+  render() {
+    const { names, searchfeild } = this.state;
+    const filrertednames = names.filter(nm =>
+      nm.name.toLowerCase().includes(searchfeild.toLowerCase())
+
+    )
+    return (
+      <div className="App">
+        <h1><b>Test App</b></h1>
+        <Dropdown></Dropdown>
+        <SearchBox
+          placeholder="search.."
+          handleChange={e => {
+            this.setState({ searchfeild: e.target.value });
+          }
+          }
+        />
+        <CardList names={filrertednames}></CardList>
+      </div>
+    );
+  }
 }
-
 export default App;
