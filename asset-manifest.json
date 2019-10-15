@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Simple-React-Test-App/static/css/main.9e158f36.chunk.css",
+    "main.js": "/Simple-React-Test-App/static/js/main.a0c2b074.chunk.js",
+    "main.js.map": "/Simple-React-Test-App/static/js/main.a0c2b074.chunk.js.map",
+    "runtime-main.js": "/Simple-React-Test-App/static/js/runtime-main.027ded20.js",
+    "runtime-main.js.map": "/Simple-React-Test-App/static/js/runtime-main.027ded20.js.map",
+    "static/css/2.0624914a.chunk.css": "/Simple-React-Test-App/static/css/2.0624914a.chunk.css",
+    "static/js/2.c7724c2d.chunk.js": "/Simple-React-Test-App/static/js/2.c7724c2d.chunk.js",
+    "static/js/2.c7724c2d.chunk.js.map": "/Simple-React-Test-App/static/js/2.c7724c2d.chunk.js.map",
+    "index.html": "/Simple-React-Test-App/index.html",
+    "precache-manifest.7b4bb0bf6b52b1264b247c0b6cee3129.js": "/Simple-React-Test-App/precache-manifest.7b4bb0bf6b52b1264b247c0b6cee3129.js",
+    "service-worker.js": "/Simple-React-Test-App/service-worker.js",
+    "static/css/2.0624914a.chunk.css.map": "/Simple-React-Test-App/static/css/2.0624914a.chunk.css.map",
+    "static/css/main.9e158f36.chunk.css.map": "/Simple-React-Test-App/static/css/main.9e158f36.chunk.css.map"
+  }
+}
