@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css'
 import { CardList } from './components/cardlist/card-list.component';
 import { SearchBox } from './components/search-box/search-box.components'
-import {Dropdown} from './components/dropdown/dropdown.component'
 
 class App extends React.Component {
 
@@ -31,7 +30,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <h1><b>Test App</b></h1>
-        <Dropdown></Dropdown>
+        
         <SearchBox
           placeholder="search.."
           handleChange={e => {
