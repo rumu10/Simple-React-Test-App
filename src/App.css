@@ -1,5 +1,5 @@
 body {
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 .App {
@@ -8,6 +8,6 @@ body {
 
 h1 {
   font-family: 'Bigelow Rules';
-  font-size: 72px;
+  font-size: 52px;
   color: #0ccac4;
 }
